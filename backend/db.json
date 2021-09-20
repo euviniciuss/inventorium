@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Notebook Mac Pro 12",
+      "price": 12000.00
+    },
+    {
+      "id": 2,
+      "name": "Celular Samsung S20+",
+      "price": 5700.00
+    },
+    {
+      "id": 3,
+      "name": "Iphone 12 Pro",
+      "price": 7200.00
+    }
+  ]
+}
