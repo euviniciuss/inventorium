@@ -3,14 +3,14 @@
   align-items: center;
 
   padding: 0 2rem;
-  background: #101318;
+  background: var(--background-color);
 }
 
 .header a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .header .logo {
@@ -30,7 +30,7 @@
 }
 
 .menu a:hover {
-  color: #8555e9;
+  color: var(--primary-color);
   background-color: rgba(133, 85, 233, 0.20);
 
 }
