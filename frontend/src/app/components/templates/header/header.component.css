@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  padding: 0 2rem;
+  background: #101318;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .logo {
+  max-height: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0 5rem;
+  gap: 1rem;
+}
+
+.menu a {
+  font-size: 1rem;
+  transition: background 0.4s;
+}
+
+.menu a:hover {
+  color: #8555e9;
+  background-color: rgba(133, 85, 233, 0.20);
+
+}
