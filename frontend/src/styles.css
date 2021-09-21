@@ -2,9 +2,9 @@
 
 :root {
   --primary-color: #8555e9;
-  --background-color: #101318;
-  --text-color: #fcffff;
-  --description-color: #717078;
+  --background: #101318;
+  --text: #fcffff;
+  --description: #717078;
 }
 
 html, body { height: 100%; }

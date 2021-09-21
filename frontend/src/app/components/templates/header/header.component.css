@@ -3,14 +3,14 @@
   align-items: center;
 
   padding: 0 2rem;
-  background: var(--background-color);
+  background: var(--background);
 }
 
 .header a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text);
 }
 
 .header .logo {
