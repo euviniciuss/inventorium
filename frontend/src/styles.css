@@ -3,9 +3,10 @@
 :root {
   --primary-color: #8555e9;
   --background: #101318;
+  --background-page: #191c1d;
   --text: #fcffff;
   --description: #717078;
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: var(--background-page); color: var(--text); }
