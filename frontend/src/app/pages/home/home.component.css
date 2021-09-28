@@ -12,10 +12,6 @@
   gap: 5rem; 
 }
 
-img {
-  max-height: 32rem;
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
@@ -24,23 +20,37 @@ img {
 }
 
 .text-container h1 {
-  max-width: 560px;
+  max-width: 620px;
 
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: 500;
-  line-height: 3rem;
+  line-height: 5rem;
 }
 
 .text-container p {
   max-width: 560px;
 
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 
   color: var(--description);
 }
 
 .text-container button {
-  margin-top: 5rem;
+  margin-top: 2rem;
   background: var(--primary-color);
+
+  padding: 0.65rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 7px;
+
+  transition: filter 0.2s;
+}
+
+.text-container button:hover {
+  filter: brightness(0.8);
+}
+
+img {
+  max-height: 32rem;
 }
