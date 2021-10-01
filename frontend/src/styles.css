@@ -6,7 +6,45 @@
   --background-page: #191c1d;
   --text: #fcffff;
   --description: #717078;
+  --background-form: #202024;
+  --background-input: #121214;
+  --border-input: #34333B;
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: var(--background-page); color: var(--text); }
+
+.label {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.input {
+  padding: 1rem;
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  
+  border: 2px solid var(--border-input);
+  border-radius: 6px;
+  
+  background: var(--background-input);
+  color: var(--description);
+  transition: border-color 0.2  s;
+}
+
+.input:focus {
+  outline: 0;
+  color: var(--text);
+  border-color: var(--primary-color);
+}
+
+.primary-button {
+  background: var(--primary-color);
+  color: var(--text);
+
+  transition: filter 0.2s;
+}
+
+.primary-button:hover {
+  filter: brightness(0.8);
+}
