@@ -1,0 +1,30 @@
+<main class="container">
+  <span class="banner"></span>
+
+  <div class="register-container">
+    <div class="content">
+      <h2>Cadastrar Produtos</h2>
+
+      <form class="form-container">
+        <mat-divider class="divider"></mat-divider>
+        <div class="form-content">
+           <!-- Input de Nome -->
+          <label class="label">Nome</label>
+          <input class="input" type="text" placeholder="Digite seu nome">
+        </div>
+
+        <div class="form-content">
+          <!-- Input de preço -->
+          <label class="label">Preço</label>
+          <input class="input" type="number" placeholder="Digite o preço (R$)">
+        </div>
+      </form>
+
+      <footer class="buttons-container">
+        <button mat-stroked-button color="warn" routerLink="/products">Cancelar</button>
+        <button class="primary-button" mat-flat-button routerLink="/products">Salvar</button>
+      </footer>
+      
+    </div>
+  </div>
+</main>

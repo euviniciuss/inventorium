@@ -9,11 +9,13 @@ import { HeaderComponent } from './components/templates/header/header.component'
 import { FooterComponent } from './components/templates/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ProductCreateComponent } from './pages/product-create/product-create.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatDividerModule } from '@angular/material/divider'; 
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { MatTableModule } from '@angular/material/table';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,9 @@ import { MatTableModule } from '@angular/material/table';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    MatInputModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
