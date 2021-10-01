@@ -4,6 +4,11 @@
     <button mat-flat-button routerLink="/">
       Adicionar produto
     </button>
-  </div>  
+  </div>
+  
+  <ul>
+    <li *appFor="let n em [1, 2, 3]">{{ n }}</li>
+    <p *appFor="let txt usando 'exemplo'">{{ txt }}</p>
+  </ul>
 
 </main>

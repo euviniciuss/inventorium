@@ -13,6 +13,8 @@ import { ProductsComponent } from './pages/products/products.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
+import { LinkPurpleDirective } from './direct/link-purple.directive';
+import { ForDirective } from './direct/for.directive';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { MatTableModule } from '@angular/material/table';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    LinkPurpleDirective,
+    ForDirective
   ],
   imports: [
     BrowserModule,
