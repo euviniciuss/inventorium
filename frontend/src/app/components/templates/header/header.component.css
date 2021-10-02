@@ -32,5 +32,10 @@
 .menu a:hover {
   color: var(--primary-color);
   background-color: rgba(133, 85, 233, 0.20);
+}
 
+@media (min-width: 1920px) {
+  .header {
+    padding: 0 18.5rem;
+  }
 }
