@@ -21,8 +21,8 @@
       </form>
 
       <footer class="buttons-container">
-        <button mat-stroked-button color="warn" routerLink="/products">Cancelar</button>
-        <button class="primary-button" mat-flat-button routerLink="/products">Salvar</button>
+        <button mat-stroked-button color="warn" (click)="navigateToProducts()">Cancelar</button>
+        <button class="primary-button" mat-flat-button (click)="navigateToProducts()">Salvar</button>
       </footer>
       
     </div>
