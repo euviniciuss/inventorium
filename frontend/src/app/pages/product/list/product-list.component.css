@@ -9,9 +9,10 @@
 .info-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   margin-top: 5rem;
+  padding: 0 2rem;
 }
 
 .info-container h1 {
@@ -35,3 +36,41 @@
   filter: brightness(0.8);
 }
 
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  gap: 1rem;
+}
+
+.total-container h2 {
+  margin: 0;
+}
+
+.total-container span {
+  background: var(--primary-color);
+  color: var(--text);
+  font-weight: 500;
+
+  padding: 0.25rem 0.8rem;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1920px) {
+  .info-container, .list-container{
+    padding: 0 18.5rem;
+  }
+}

@@ -15,6 +15,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: var(--background-page); color: var(--text); }
 
+/* Input */
 .label {
   font-weight: 500;
   font-size: 1.2rem;
@@ -54,7 +55,31 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   filter: brightness(0.8);
 }
 
+/* Snack bar */
 .positive-snack-bar {
   background: var(--positive-color);
   color: var(--text);
+}
+
+/* Table */
+.table {
+  width: 100%;
+  background: none;
+  box-shadow: none;
+}
+
+.table th {
+  color: var(--description);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.table td {
+  font-size: 1rem;
+  height: 4rem;
+  /* border-color: var(--background-page); */
+}
+
+.table td:first-child {
+  font-weight: 500;
 }

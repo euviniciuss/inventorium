@@ -11,6 +11,7 @@ import { ProductProps } from '../product.model';
 })
 export class ProductListComponent implements OnInit {
   products: ProductProps[] = [];
+  displayedColumns = ['id', 'name', 'price']
 
   constructor(
     private router: Router,
