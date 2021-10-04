@@ -39,6 +39,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   border-color: var(--primary-color);
 }
 
+.input:valid {
+  color: var(--text);
+}
+
 .primary-button {
   background: var(--primary-color);
   color: var(--text);

@@ -3,17 +3,27 @@
     {
       "id": 1,
       "name": "Notebook Mac Pro 12",
-      "price": 12000.00
+      "price": 12000
     },
     {
       "id": 2,
       "name": "Celular Samsung S20+",
-      "price": 5700.00
+      "price": 5700
     },
     {
       "id": 3,
       "name": "Iphone 12 Pro",
-      "price": 7200.00
+      "price": 7200
+    },
+    {
+      "name": "Iphone XR",
+      "price": 2500,
+      "id": 4
+    },
+    {
+      "name": "Zenfone 4",
+      "price": 1200,
+      "id": 5
     }
   ]
 }

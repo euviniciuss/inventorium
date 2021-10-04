@@ -10,13 +10,25 @@
         <div class="form-content">
            <!-- Input de Nome -->
           <label class="label">Nome do produto</label>
-          <input class="input" type="text" placeholder="Digite o nome do produto">
+          <input 
+            [(ngModel)]="product.name"
+            name="name"
+            class="input" 
+            type="text" 
+            placeholder="Digite o nome do produto"
+          >
         </div>
 
         <div class="form-content">
           <!-- Input de preço -->
           <label class="label">Preço</label>
-          <input class="input" type="number" placeholder="Digite o preço (R$)">
+          <input 
+            [(ngModel)]="product.price"
+            name="price"
+            class="input" 
+            type="number" 
+            placeholder="Digite o preço (R$)"
+          >
         </div>
       </form>
 
