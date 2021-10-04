@@ -9,6 +9,7 @@
   --background-form: #202024;
   --background-input: #121214;
   --border-input: #34333B;
+  --positive-color: #07bc0c;
 }
 
 html, body { height: 100%; }
@@ -47,4 +48,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 
 .primary-button:hover {
   filter: brightness(0.8);
+}
+
+.positive-snack-bar {
+  background: var(--positive-color);
+  color: var(--text);
 }
