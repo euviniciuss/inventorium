@@ -8,14 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/templates/header/header.component';
 import { FooterComponent } from './components/templates/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductsComponent } from './pages/products/products.component';
-import { ProductCreateComponent } from './pages/product-create/product-create.component';
+import { ProductComponent } from './pages/product/product.component';
+import { ProductListComponent } from './pages/product/list/product-list.component';
+import { ProductCreateComponent } from './pages/product/create/product-create.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
-import { MatDividerModule } from '@angular/material/divider'; 
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { MatDividerModule } from '@angular/material/divider';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ProductsComponent,
+    ProductComponent,
+    ProductComponent,
+    ProductListComponent,
     ProductCreateComponent
   ],
   imports: [

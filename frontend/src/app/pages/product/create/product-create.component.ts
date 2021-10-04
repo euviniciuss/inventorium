@@ -14,7 +14,7 @@ export class ProductCreateComponent implements OnInit {
   }
 
   navigateToProducts(): void {
-    this.router.navigate(['/products']);
+    this.router.navigate(['/product']);
   }
 
 }
