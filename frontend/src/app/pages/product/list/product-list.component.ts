@@ -11,6 +11,7 @@ import { ProductProps } from '../product.model';
 })
 export class ProductListComponent implements OnInit {
   products: ProductProps[] = [];
+  totalProducts: number = 0;
   displayedColumns = ['id', 'name', 'price']
 
   constructor(
@@ -21,7 +22,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.productService.read().subscribe(products => {
       this.products = products;
-      console.log(this.products);
+      this.totalProducts = this.products.length;
     });
   }
 

@@ -24,6 +24,16 @@
       "name": "Zenfone 4",
       "price": 1200,
       "id": 5
+    },
+    {
+      "name": "Samsung Note 10",
+      "price": 3400,
+      "id": 6
+    },
+    {
+      "name": "Iphone X",
+      "price": 2700,
+      "id": 7
     }
   ]
 }
