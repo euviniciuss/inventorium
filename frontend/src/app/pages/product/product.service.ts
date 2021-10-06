@@ -8,7 +8,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  baseUrl = "http://localhost:8080/products"
+  baseUrl = "http://localhost:8080/products";
+  idProduct: string = '';
+  urlProduct: string = `${this.baseUrl}/${this.idProduct}`;
 
   constructor(
     private snackBar: MatSnackBar,
@@ -33,6 +35,18 @@ export class ProductService {
   //Ler produtos no backend
   read(): Observable<ProductProps[]> {
     return this.http.get<ProductProps[]>(this.baseUrl);
+  }
+
+  //Ler um  produto pelo Id
+  readById(id: string): Observable<ProductProps> {
+    this.idProduct = id;
+    this.urlProduct;
+    return this.http.get<ProductProps>(this.urlProduct);
+  }
+
+  //Atualizar um produto
+  update(product: ProductProps): Observable<ProductProps> {
+    return this.http.put<ProductProps>(this.urlProduct, product);
   }
 
 }

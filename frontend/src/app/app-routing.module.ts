@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ProductListComponent } from './pages/product/list/product-list.component';
 import { ProductCreateComponent } from './pages/product/create/product-create.component';
+import { ProductUpdateComponent } from './pages/product/update/product-update.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: "create",
         component: ProductCreateComponent,
+      },
+      {
+        path: "update/:id",
+        component: ProductUpdateComponent
       }
     ]
   }
