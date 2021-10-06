@@ -10,6 +10,7 @@
   --background-input: #121214;
   --border-input: #34333B;
   --positive-color: #07bc0c;
+  --negative-color: #f44336;
 }
 
 html, body { height: 100%; }
@@ -66,6 +67,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   width: 100%;
   background: none;
   box-shadow: none;
+  margin-bottom: 1rem;
 }
 
 .table th {

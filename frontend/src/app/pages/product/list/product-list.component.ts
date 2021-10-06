@@ -12,7 +12,7 @@ import { ProductProps } from '../product.model';
 export class ProductListComponent implements OnInit {
   products: ProductProps[] = [];
   totalProducts: number = 0;
-  displayedColumns = ['id', 'name', 'price']
+  displayedColumns = ['id', 'name', 'price', 'edit', 'delete']
 
   constructor(
     private router: Router,

@@ -69,6 +69,33 @@
   border-radius: 1rem;
 }
 
+.table td a {
+  width: 3rem;
+  padding: 0.5rem 0.1rem;
+  border-radius: 5px;
+
+  color: var(--text);
+  transition: filter 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.table td a:hover {
+  filter: brightness(0.8);
+}
+
+.edit-icon {
+  background: var(--primary-color);  
+}
+
+.delete-icon {
+  background: var(--negative-color);
+}
+
 @media (min-width: 1920px) {
   .info-container, .list-container{
     padding: 0 18.5rem;
