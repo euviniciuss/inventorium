@@ -19,11 +19,14 @@ import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 
 import { HttpClientModule } from '@angular/common/http';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { ProductUpdateComponent } from './pages/product/update/product-update.component';
+import { ModalComponent } from './components/templates/modal/modal.component';
 
 registerLocaleData(localePt);
 
@@ -37,7 +40,8 @@ registerLocaleData(localePt);
     ProductComponent,
     ProductListComponent,
     ProductCreateComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ registerLocaleData(localePt);
     MatDividerModule,
     MatSnackBarModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatIconModule
   ],
   providers: [{
     provide: LOCALE_ID,

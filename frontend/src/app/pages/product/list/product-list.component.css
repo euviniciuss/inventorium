@@ -1,4 +1,5 @@
 .container {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +44,7 @@
   align-items: flex-start;
 
   padding: 0 2rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .total-container {
@@ -69,9 +70,38 @@
   border-radius: 1rem;
 }
 
-.table td a {
+.table-prodcuts {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+}
+
+.thead-products th {
+  color: var(--description);
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.tbody-products td {
+  background: var(--background);
+
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.tbody-products td:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.tbody-products td:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.tbody-products a{
   width: 3rem;
-  padding: 0.5rem 0.1rem;
+  padding: 0.5rem 0;
   border-radius: 5px;
 
   color: var(--text);
@@ -85,8 +115,12 @@
   text-decoration: none;
 }
 
-.table td a:hover {
+.tbody-products a:hover{
   filter: brightness(0.8);
+}
+
+.tbody-products a i {
+  font-size: 1.2rem;
 }
 
 .edit-icon {

@@ -62,26 +62,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   color: var(--text);
 }
 
-/* Table */
-.table {
-  width: 100%;
-  background: none;
-  box-shadow: none;
-  margin-bottom: 1rem;
-}
-
-.table th {
-  color: var(--description);
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.table td {
-  font-size: 1rem;
-  height: 4rem;
-  /* border-color: var(--background-page); */
-}
-
-.table td:first-child {
-  font-weight: 500;
-}
