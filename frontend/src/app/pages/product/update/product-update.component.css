@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner {
+  background: var(--primary-color);
+
+  height: 10px;
+  max-height: 10px;
+  padding: 3rem 0;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: -2.5rem;
+}
+
+.content {
+  background: var(--background-form);
+
+  padding: 2rem;
+  width: 420px;
+  border-radius: 5px;
+}
+
+.content h2 {
+  font-size: 1.7rem;
+}
+
+.form-container {
+  width: 100%;
+
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+}
+
+.divider {
+  margin-bottom: 1rem;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-container {
+  margin-top: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 1rem;
+}
+
+.buttons-container button {
+  padding: 0.2rem 1.6rem;
+  font-size: 1rem;
+}

@@ -1,1 +1,42 @@
-<p>product-update works!</p>
+<main class="container">
+  <span class="banner"></span>
+
+  <div class="register-container">
+    <div class="content">
+      <h2>Atualização do Produto</h2>
+
+      <form class="form-container">
+        <mat-divider class="divider"></mat-divider>
+        <div class="form-content">
+           <!-- Input de Nome -->
+          <label class="label">Nome do produto</label>
+          <input 
+            [(ngModel)]="product.name"
+            name="name"
+            class="input" 
+            type="text" 
+            placeholder="Digite o nome do produto"
+          >
+        </div>
+
+        <div class="form-content">
+          <!-- Input de preço -->
+          <label class="label">Preço</label>
+          <input 
+            [(ngModel)]="product.price"
+            name="price"
+            class="input" 
+            type="number" 
+            placeholder="Digite o preço (R$)"
+          >
+        </div>
+      </form>
+
+      <footer class="buttons-container">
+        <button mat-stroked-button color="warn" (click)="navigateToProducts()">Cancelar</button>
+        <button class="primary-button" mat-flat-button (click)="updateProduct()">Atualizar</button>
+      </footer>
+      
+    </div>
+  </div>
+</main>

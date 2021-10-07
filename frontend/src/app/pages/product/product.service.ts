@@ -9,8 +9,6 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
   baseUrl = "http://localhost:8080/products";
-  idProduct: string = '';
-  urlProduct: string = `${this.baseUrl}/${this.idProduct}`;
 
   constructor(
     private snackBar: MatSnackBar,
@@ -39,14 +37,20 @@ export class ProductService {
 
   //Ler um  produto pelo Id
   readById(id: string): Observable<ProductProps> {
-    this.idProduct = id;
-    this.urlProduct;
-    return this.http.get<ProductProps>(this.urlProduct);
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<ProductProps>(url);
   }
 
   //Atualizar um produto
   update(product: ProductProps): Observable<ProductProps> {
-    return this.http.put<ProductProps>(this.urlProduct, product);
+    const url = `${this.baseUrl}/${product.id}`;
+    return this.http.put<ProductProps>(url, product);
   }
+
+  //Deletar um produto
+  delete(id: string): Observable<ProductProps> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<ProductProps>(url);
+  };
 
 }
