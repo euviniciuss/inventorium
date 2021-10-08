@@ -1,3 +1,11 @@
-<h1>
-  Teste
-</h1>
+<div class="container">
+  <h1>Excluir produto</h1>
+  <mat-divider></mat-divider>
+  <p>Tem certeza de que deseja excluir esse produto?</p>
+
+  <footer class="buttons-container">
+    <button mat-stroked-button color="warn" (click)="cancel()">Cancelar</button>
+    <button class="primary-button" mat-flat-button (click)="deleteProduct()">Excluir</button>
+  </footer>
+
+</div>

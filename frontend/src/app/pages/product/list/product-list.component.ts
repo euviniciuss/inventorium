@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
 
 import { ProductService } from '../product.service';
 import { ProductProps } from '../product.model';
+
+import { ModalComponent } from 'src/app/components/templates/modal/modal.component';
 
 @Component({
   selector: 'app-product-list',
@@ -16,6 +19,7 @@ export class ProductListComponent implements OnInit {
   constructor(
     private router: Router,
     private productService: ProductService,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -27,5 +31,15 @@ export class ProductListComponent implements OnInit {
 
   navigateToProductsCreate(): void {
     this.router.navigate(['/product/create']);
+  }
+
+  openModal(): void {
+    const dialogRef = this.dialog.open(ModalComponent, {
+      width: '360px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Fechou');
+    })
   }
 }
